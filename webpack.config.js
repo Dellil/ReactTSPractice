@@ -23,5 +23,10 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.join(__dirname, 'dist'),
+        publicPath: '/dist',
+    },
+    devServer: {
+        port: 8080,
+        publicPath: '/dist/',
     }
 }
